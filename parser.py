@@ -83,6 +83,12 @@ def classify_page(text: str) -> str:
     editions (Fall 2020, W/S 2021) add uppercase special-series sections.
     The "SUMMER LECTURE SERIES" check sits AFTER the Thursday check because
     Thursday intro pages mention the summer series in their preamble/preview.
+
+    Fall 2026 drift: the Thursday section is rebranded "THURSDAY LECTURES:
+    Thoughtful Talks for Curious Minds" — the old "THURSDAY LECTURE SERIES"
+    string survives only in the TOC. That catalog's multi-page TOC (and its
+    study-group pages) carry a "TABLE OF CONTENTS" running string, so the
+    toc check keeps winning over the section names those pages list.
     """
     collapsed = " ".join(text.split())
     if any(tok in collapsed for tok in COVER_TOKENS):
@@ -103,7 +109,11 @@ def classify_page(text: str) -> str:
         return "torn"
     if "DISTINGUISHED LECTURE SERIES" in collapsed:
         return "distinguished"
-    if "THURSDAY MORNING LECTURE SERIES" in collapsed or "THURSDAY LECTURE SERIES" in collapsed:
+    if (
+        "THURSDAY MORNING LECTURE SERIES" in collapsed
+        or "THURSDAY LECTURE SERIES" in collapsed
+        or "THURSDAY LECTURES" in collapsed  # Fall 2026 rebrand
+    ):
         return "thursday"
     if "SUMMER LECTURE SERIES" in collapsed:
         return "summer"
@@ -157,6 +167,10 @@ MONTH_YEAR_RE = re.compile(rf"{_MONTH}\s+20\d\d(?:\s*{_DASH}\s*{_MONTH}\s+20\d\d
 SLASH_RANGE_RE = re.compile(
     rf"\(?\d{{1,2}}/\d{{1,2}}(?:/\d{{2,4}})?\s*{_DASH}\s*\d{{1,2}}/\d{{1,2}}(?:/\d{{2,4}})?\)?"
 )
+# Fall 2026 date lines: "Tuesday, 9/15 from 10-11:30am". Both the weekday
+# prefix and the "from <time>" tail are required so bare slash dates in prose
+# ("Other dates: 3/18, 3/25 & 4/8") never anchor.
+WD_SLASH_FROM_RE = re.compile(rf"{_WD},?\s+\d{{1,2}}/\d{{1,2}}\s+from\s+{_TIME}{_TRAIL}")
 
 
 def anchor_kind(line: str) -> str | None:
@@ -166,6 +180,8 @@ def anchor_kind(line: str) -> str | None:
         return None
     m = SINGLE_DATE_RE.fullmatch(line)
     if m and (m.group("wd") or m.group("year") or m.group("time")):
+        return "single"
+    if WD_SLASH_FROM_RE.fullmatch(line):
         return "single"
     if DAY_RANGE_RE.fullmatch(line):
         return "day-range"
@@ -205,6 +221,9 @@ _FURNITURE_RES = [
     re.compile(r"OLLI-UM"),                             # Fall 2020 / W/S 2021 page footer
     re.compile(r"Fall Catalog"),                        # Fall 2020 page footer
     re.compile(r"Winter/Spring Catalog 20\d\d"),        # W/S 2021 page footer
+    # Fall 2026 "THURSDAY LECTURES" rebrand banners/footers
+    re.compile(r"(2027 )?THURSDAY LECTURES( 20\d\d)?(: Thoughtful Talks for Curious Minds)?"),
+    re.compile(r"Thoughtful Talks for Curious Minds"),
 ]
 
 
