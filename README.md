@@ -9,6 +9,9 @@ the printed catalog brochures (PDF) into clean, tagged data.
 > Unofficial project — compiled from OLLI-UM's published catalog brochures. Not affiliated with
 > or endorsed by OLLI or the University of Michigan.
 
+Part of my [AI-systems portfolio](https://github.com/jay-banet/ai-systems-portfolio) — built
+end-to-end with an AI-agent development workflow (spec → test-driven build → verification).
+
 ## Why
 
 A family member volunteers with OLLI, helping staff make years of lecture history searchable.
@@ -38,7 +41,10 @@ The pipeline splits the difference:
    backend, senior-friendly typography); `to_csv.py` flattens records for spreadsheet use.
 
 Every record traces back to its source text; verified fields are locked by golden-set tests
-so parser changes can't silently corrupt them.
+so parser changes can't silently corrupt them. The pipeline is human-in-the-loop by design:
+records were spot-verified against the source PDFs page-by-page, a hand-verified golden sample
+anchors the regression suite, and anything the source leaves ambiguous is flagged in `notes`
+rather than guessed.
 
 ## Data
 
