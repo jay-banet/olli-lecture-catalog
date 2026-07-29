@@ -76,7 +76,8 @@ def series_html(r):
 
 def build(json_path, out_path):
     data = json.load(open(json_path))
-    editions = data["editions"]
+    # display newest season first (the JSON stores editions oldest -> newest)
+    editions = list(reversed(data["editions"]))
     by_edition = defaultdict(list)
     for r in data["records"]:
         by_edition[r["edition"]].append(r)
