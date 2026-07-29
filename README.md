@@ -1,6 +1,6 @@
 # OLLI Lecture Catalog (2018–2026)
 
-A searchable, structured catalog of **128 lectures and 45 lecture-series themes** from eleven
+A searchable, structured catalog of **145 lectures and 48 lecture-series themes** from twelve
 seasons of the Osher Lifelong Learning Institute at the University of Michigan, extracted from
 the printed catalog brochures (PDF) into clean, tagged data.
 
@@ -18,7 +18,7 @@ across two-column spreads, with layouts that drift every season. The lecture dat
 
 ## How it works — hybrid deterministic + LLM pipeline
 
-The interesting engineering problem: **print layouts drift across eleven seasons** (renamed
+The interesting engineering problem: **print layouts drift across twelve seasons** (renamed
 series, COVID-era Zoom formats, changed date formats, column interleaves, even misprints).
 A pure-regex parser breaks on drift; a pure-LLM extraction can't be regression-tested.
 
@@ -26,7 +26,7 @@ The pipeline splits the difference:
 
 1. **Deterministic splitter** (`parser.py`) — pdftotext → pages → edition assignment →
    section classification (lecture series vs. courses/travel/membership pages) → per-lecture
-   blocks anchored on date-line patterns. Pure Python, fully covered by pytest (147 tests),
+   blocks anchored on date-line patterns. Pure Python, fully covered by pytest (172 tests),
    including regression tests that reproduce a hand-verified golden sample and negative tests
    that reject prose false-positives ("the November 5, 2024 U.S. Presidential election" is not
    a lecture).
@@ -58,6 +58,7 @@ so parser changes can't silently corrupt them.
 | Fall 2022 | 5 | From a press proof |
 | Winter/Spring 2023 → Fall 2025 | 73 | Six consecutive seasons |
 | Winter 2026 | 17 | Individually-printed Thursday lectures |
+| Fall 2026 | 17 | Newest season — rebranded "Thursday Lectures" section, new date formats |
 
 Thursday series before Winter 2024 were printed as series *themes* only — individual Thursday
 speakers for those seasons were never published in the brochures.
