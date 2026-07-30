@@ -5,11 +5,11 @@
   "Fall 2018 Catalog Final press quality.pdf (80 pages; standalone Fall 2018 catalog)",
   "OLLI Fall 2020 Catalog Final.pdf (64 pages; standalone Fall 2020 catalog, online-only COVID term)",
   "WS 2021 UM OSHER Catalog.pdf (80 pages; standalone Winter/Spring 2021 catalog, online-only COVID term)",
-  "OLLI_Catalog_2022_Fall_v1b-JG-PROOF-FIN.pdf (31 pages; Fall 2022 press proof)",
+  "Scrollable Copy OLLI_Catalog_2022_Fall_v3.pdf (33 pages; final Fall 2022 catalog — supersedes OLLI_Catalog_2022_Fall_v1b-JG-PROOF-FIN.pdf, the 31-page press proof the edition was first parsed from)",
   "olli-fall-2026final.pdf (93 pages; standalone Fall 2026 catalog)"
  ],
- "generated": "2026-07-29",
- "method": "deterministic splitter (parser.py, pdftotext default reading-order mode) + in-session LLM tagging (BLC-001; Winter 2026 edition + speaker_bio field added in BLC-002; Fall 2018 / Fall 2020 / Winter/Spring 2021 / Fall 2022 archive catalogs added in BLC-003); Fall 2026 standalone catalog added 2026-07-29",
+ "generated": "2026-07-30",
+ "method": "deterministic splitter (parser.py, pdftotext default reading-order mode) + in-session LLM tagging (BLC-001; Winter 2026 edition + speaker_bio field added in BLC-002; Fall 2018 / Fall 2020 / Winter/Spring 2021 / Fall 2022 archive catalogs added in BLC-003); Fall 2026 standalone catalog added 2026-07-29; Fall 2022 re-parsed from the final v3 catalog, replacing the press-proof parse (BLC-006)",
  "editions": [
   "Fall 2018",
   "Fall 2020",
@@ -122,7 +122,7 @@
   "Fall 2020: the theme list announces “Food Conservancy (Summer 2021)” name-only; the series is fully described (as Food Insecurity) only in the Winter/Spring 2021 catalog, where its record lives.",
   "Winter/Spring 2021: Thursday series print themes only; the sponsored individual lectures (Gravitational Waves 1/21, John Kingston 2/11, Graphics and Picture Books for Children 4/1) are title/date mentions without speakers or descriptions — no lecture records.",
   "Winter/Spring 2021: Torn From the Headlines prints no topics or speakers (announced shortly before each session) — series record only.",
-  "Fall 2022 (press proof, 31pp): only the Sep 2022-Jan 2023 Distinguished lectures and two Thursday themes are printed; no DEI/Zekelman lecture pages exist in this file."
+  "Fall 2022 (final catalog v3, 33pp): only the Sep 2022-Jan 2023 Distinguished lectures and two Thursday themes are printed; no DEI/Zekelman lecture pages exist in this file."
  ],
  "dedup_notes": [
   "Fall 2023 printed previews of four Winter 2024 Thursday series (Big Science & Tech Explained!; The Role of Arts as Social, Cultural and Spiritual Change Agents [2/22/24-4/4/24]; Big Data and Artificial Intelligence; Summer: Mastering the Garden). All four are kept once, as Winter 2024 series records where they are fully described; title/date drift from the previews is noted on each record.",
@@ -838,7 +838,7 @@
    "institution": "University of Michigan",
    "date": "2022-10-11",
    "time": "10:00 - 11:30am",
-   "description": "How do we find people in the past who don’t want to be found? Catholicism in post-Reformation England was a fugitive faith. In the century before the first colonial settlements were established in North America. In the early 1600s, English Catholics had lived a twilight existence, scarcely visible in the archives. Their faith was driven underground, their priests were hunted down and executed, their children taken away from them, and their dead denied Christian burial. Men and women who adhered to the old faith learned to live in the shadows. This talk explores some of the evidence available to historians who seek to understand the world colonial Catholics made for themselves, drawing examples from both textual and material sources.",
+   "description": "How do we find people in the past who don’t want to be found? Catholicism in post-Reformation England was a fugitive faith in the century before the first colonial settlements were established in North America. In the early 1600s, English Catholics had lived a twilight existence, scarcely visible in the archives. Their faith was driven underground, their priests were hunted down and executed, their children taken away from them, and their dead denied Christian burial. Men and women who adhered to the old faith learned to live in the shadows. This talk explores some of the evidence available to historians who seek to understand the world colonial Catholics made for themselves, drawing examples from both textual and material sources.",
    "speaker_bio": "Susan Juster, The Rhys Isaac Collegiate Professor of History, received her Ph.D from the University of Michigan in 1990. She works on early American cultural history, with a focus on religion in a transatlantic context. Her publications include Sacred Violence in Early America (2016), Doomsayers, Anglo-American Prophecy in the Age of Revolution (2003), and Disorderly Women, Sexual Politics and Evangelicalism in Revolutionary New England (1994). She is currently working on a study of the material and ritual lives of English Catholics in the North American and Caribbean colonies from the early 17th through the mid 18th century.",
    "notes": "A lecture with this title also appears in the Winter/Spring 2023 catalog dated 2023-02-14; both kept as printed."
   },
@@ -851,11 +851,11 @@
    "speaker": "Professor Michael Traugott",
    "speaker_title": "Research Professor, Center for Political Studies; Professor, Communication Studies; Adjunct Professor, Department of Political Science",
    "institution": "University of Michigan",
-   "date": "2022-11-11",
+   "date": "2022-11-22",
    "time": "10:00 - 11:30am",
-   "description": "Professor Traugott will summarize the results, the key voting patterns and voter rationale for the recent (11/8/2022) U.S. midterm elections.",
-   "speaker_bio": "Michael Traugott is a political scientist who studies campaigns and elections, voting behavior, political communication, the use of polls to construct news, and survey methodology. He has published extensively in all of these areas. He is active in the American Association for Public Opinion Research (AAPOR) and the World Association for Public Opinion Research (WAPOR), serving as president of both organizations. In 2010, he received the AAPOR Award for Exceptionally Distinguished Service. He also served as president of the Midwest Association for Public Opinion Research (MAPOR).",
-   "notes": "Printed as “Tuesday, November 11” — November 11, 2022 was a Friday (the second-Tuesday convention suggests November 15, after the 11/8 midterms); recorded as printed."
+   "description": "Professor Traugott will summarize the results, the key voting patterns and voter rationale for the 11/8/2022 U.S. midterm elections.",
+   "speaker_bio": "Michael Traugott is a political scientist who studies campaigns and elections, voting behavior, political communication, the use of polls to construct news, and survey methodology. He has published extensively in all of these areas. He is active in the American Association for Public Opinion Research (AAPOR) and the World Association for Public Opinion Research (WAPOR), serving as president of both organizations. In 2010, he received the AAPOR Award for Exceptionally Distinguished Service. He also served as president of the Midwest Association for Public Opinion Research (MAPOR). He is a frequent resource for journalists interested in discussing American political campaigns and government operations.",
+   "notes": "The press proof printed “Tuesday, November 11” — a Friday; the final catalog (v3) corrects the date to Tuesday, November 22, 2022, and this record follows the final catalog."
   },
   {
    "type": "lecture",
