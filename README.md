@@ -1,6 +1,6 @@
 # OLLI Lecture Catalog (2018–2026)
 
-A searchable, structured catalog of **145 lectures and 48 lecture-series themes** from twelve
+A searchable, structured catalog of **150 lectures and 53 lecture-series themes** from thirteen
 seasons of the Osher Lifelong Learning Institute at the University of Michigan, extracted from
 the printed catalog brochures (PDF) into clean, tagged data.
 
@@ -21,7 +21,7 @@ across two-column spreads, with layouts that drift every season. The lecture dat
 
 ## How it works — hybrid deterministic + LLM pipeline
 
-The interesting engineering problem: **print layouts drift across twelve seasons** (renamed
+The interesting engineering problem: **print layouts drift across thirteen seasons** (renamed
 series, COVID-era Zoom formats, changed date formats, column interleaves, even misprints).
 A pure-regex parser breaks on drift; a pure-LLM extraction can't be regression-tested.
 
@@ -29,7 +29,7 @@ The pipeline splits the difference:
 
 1. **Deterministic splitter** (`parser.py`) — pdftotext → pages → edition assignment →
    section classification (lecture series vs. courses/travel/membership pages) → per-lecture
-   blocks anchored on date-line patterns. Pure Python, fully covered by pytest (172 tests),
+   blocks anchored on date-line patterns. Pure Python, fully covered by pytest (183 tests),
    including regression tests that reproduce a hand-verified golden sample and negative tests
    that reject prose false-positives ("the November 5, 2024 U.S. Presidential election" is not
    a lecture).
@@ -59,9 +59,10 @@ rather than guessed.
 | Season | Lectures | Notes |
 |---|---|---|
 | Fall 2018 | 5 | Distinguished only; descriptions not printed in this edition |
+| Fall 2019 | 5 | Rasterized print-to-PDF excerpt — transcribed visually, not pdftotext |
 | Fall 2020 | 15 | COVID era — includes Election 2020 + COVID-19 urgent series |
 | Winter/Spring 2021 | 13 | COVID era — includes Medical Ethics 101 |
-| Fall 2022 | 5 | From a press proof |
+| Fall 2022 | 5 | Re-sourced from the final v3 catalog (was press proof) |
 | Winter/Spring 2023 → Fall 2025 | 73 | Six consecutive seasons |
 | Winter 2026 | 17 | Individually-printed Thursday lectures |
 | Fall 2026 | 17 | Newest season — rebranded "Thursday Lectures" section, new date formats |

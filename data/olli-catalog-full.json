@@ -6,12 +6,14 @@
   "OLLI Fall 2020 Catalog Final.pdf (64 pages; standalone Fall 2020 catalog, online-only COVID term)",
   "WS 2021 UM OSHER Catalog.pdf (80 pages; standalone Winter/Spring 2021 catalog, online-only COVID term)",
   "Scrollable Copy OLLI_Catalog_2022_Fall_v3.pdf (33 pages; final Fall 2022 catalog — supersedes OLLI_Catalog_2022_Fall_v1b-JG-PROOF-FIN.pdf, the 31-page press proof the edition was first parsed from)",
-  "olli-fall-2026final.pdf (93 pages; standalone Fall 2026 catalog)"
+  "olli-fall-2026final.pdf (93 pages; standalone Fall 2026 catalog)",
+  "Pages Fall 2019 lectures.pdf (5 pages; Fall 2019 lecture-pages excerpt, rasterized Microsoft Print-to-PDF transcribed in-session)"
  ],
- "generated": "2026-07-30",
- "method": "deterministic splitter (parser.py, pdftotext default reading-order mode) + in-session LLM tagging (BLC-001; Winter 2026 edition + speaker_bio field added in BLC-002; Fall 2018 / Fall 2020 / Winter/Spring 2021 / Fall 2022 archive catalogs added in BLC-003); Fall 2026 standalone catalog added 2026-07-29; Fall 2022 re-parsed from the final v3 catalog, replacing the press-proof parse (BLC-006)",
+ "generated": "2026-07-31",
+ "method": "deterministic splitter (parser.py, pdftotext default reading-order mode) + in-session LLM tagging (BLC-001; Winter 2026 edition + speaker_bio field added in BLC-002; Fall 2018 / Fall 2020 / Winter/Spring 2021 / Fall 2022 archive catalogs added in BLC-003); Fall 2026 standalone catalog added 2026-07-29; Fall 2022 re-parsed from the final v3 catalog, replacing the press-proof parse (BLC-006); Fall 2019 5-page lecture-pages excerpt added via in-session visual transcription (no text layer, no OCR dependency — BLC-010)",
  "editions": [
   "Fall 2018",
+  "Fall 2019",
   "Fall 2020",
   "Winter/Spring 2021",
   "Fall 2022",
@@ -25,11 +27,12 @@
   "Fall 2026"
  ],
  "summary": {
-  "total_records": 193,
-  "lectures": 145,
-  "series": 48,
+  "total_records": 203,
+  "lectures": 150,
+  "series": 53,
   "lectures_by_edition": {
    "Fall 2018": 5,
+   "Fall 2019": 5,
    "Fall 2020": 15,
    "Winter/Spring 2021": 13,
    "Fall 2022": 5,
@@ -44,6 +47,7 @@
   },
   "series_by_edition": {
    "Fall 2018": 5,
+   "Fall 2019": 5,
    "Fall 2020": 7,
    "Winter/Spring 2021": 7,
    "Fall 2022": 2,
@@ -57,13 +61,17 @@
    "Fall 2026": 3
   },
   "lectures_by_series_type": {
-   "tuesday-distinguished": 56,
+   "tuesday-distinguished": 61,
    "thursday-series": 46,
    "special": 43
   },
   "speaker_bio_by_edition": {
    "Fall 2018": {
     "with_bio": 0,
+    "lectures": 5
+   },
+   "Fall 2019": {
+    "with_bio": 2,
     "lectures": 5
    },
    "Fall 2020": {
@@ -119,6 +127,10 @@
   "Winter/Spring 2025: the 'Celebrating the Beauty and Power of the Arts' Thursday series (Mar 13 - Apr 3, 2025) is announced series-level only ('More details to come'); individual lectures are not printed anywhere in the PDF.",
   "Fall 2018: Distinguished lectures print no descriptions — only date, title, and speaker credentials; only the Sep 2018-Jan 2019 half of the ten-lecture season is printed, and no Summer series page exists in this catalog.",
   "Fall 2018: Thursday Morning series print themes only; individual lectures are not printed (same shape as the 2023 editions).",
+  "Fall 2019: only a 5-page lecture-pages excerpt was received (Microsoft Print-to-PDF, body text rasterized — no text layer; records transcribed visually in-session, BLC-010). Study groups, events, and all other catalog sections are not in the excerpt.",
+  "Fall 2019: only the Sep 2019-Jan 2020 half of the ten-lecture Distinguished season is printed in the received pages (same split as Fall 2018).",
+  "Fall 2019: Thursday series print themes only; individual lectures are not printed (same shape as Fall 2018).",
+  "Fall 2019: the theme list announces ‘Water in Michigan (Summer 2020)’ name-only; no series page exists in the received excerpt — no record.",
   "Fall 2020: the theme list announces “Food Conservancy (Summer 2021)” name-only; the series is fully described (as Food Insecurity) only in the Winter/Spring 2021 catalog, where its record lives.",
   "Winter/Spring 2021: Thursday series print themes only; the sponsored individual lectures (Gravitational Waves 1/21, John Kingston 2/11, Graphics and Picture Books for Children 4/1) are title/date mentions without speakers or descriptions — no lecture records.",
   "Winter/Spring 2021: Torn From the Headlines prints no topics or speakers (announced shortly before each session) — series record only.",
@@ -130,7 +142,8 @@
   "Winter/Spring 2021 points to the Jan 12, 2021 Huda Akil Distinguished lecture only as a sponsorship line (“– 1/12”); the full record lives in the Fall 2020 edition — no W/S 2021 record created.",
   "Fall 2022 prints an “Upcoming Thursday Morning Lecture Series for Winter/Spring 2023” preview box (Plastics; Future of Education; Human Migration; Summer 2023). Not recorded — those series records live in the Winter/Spring 2023 edition.",
   "Fall 2022 and Winter/Spring 2023 both print “What Should the Work Ethic Mean for Us Today?” (2023-01-10, Anderson) and “Finding Catholics In Early America” (2022-10-11 vs 2023-02-14, Juster). Kept in both editions as printed.",
-  "Fall 2026 printed previews of two Winter/Spring 2027 Thursday series (The Impact of AI on Society, Jan 28 - Feb 25, 2027; the new non-thematic Spring Lecture Series, Mar 11 - Apr 8, 2027, with partial speaker announcements: Robin Brewer on 3/11 and Aaron Ahuvia on 4/1). Not recorded here - per the preview convention they belong to the Winter/Spring 2027 edition when that catalog arrives."
+  "Fall 2026 printed previews of two Winter/Spring 2027 Thursday series (The Impact of AI on Society, Jan 28 - Feb 25, 2027; the new non-thematic Spring Lecture Series, Mar 11 - Apr 8, 2027, with partial speaker announcements: Robin Brewer on 3/11 and Aaron Ahuvia on 4/1). Not recorded here - per the preview convention they belong to the Winter/Spring 2027 edition when that catalog arrives.",
+  "Fall 2019 (an annual catalog like Fall 2018) fully describes all five 2019-20 Thursday themes, including the three winter/spring-2020 ones (The Impact of Social Media on Society; The Power of Art; Money, Trade, and Power); all five live as Fall 2019 series records. If the Winter/Spring 2020 catalog surfaces and reprints them, both editions keep their records, per the cross-edition convention."
  ],
  "records": [
   {
@@ -256,6 +269,129 @@
    "time": "Thursdays, 10:00 - 11:30 a.m.",
    "individual_lectures_printed": false,
    "description": "Feminist inquiry in the mid twentieth century showed us how profoundly society is structured by gender. The constraints that have traditionally shaped roles are changing broadly and rapidly. Many refuse to see themselves labeled by gender or assigned stereotypical roles. Change has come in childrearing, income distribution, and even long-held male religious roles. The media reflects these societal changes as male and female roles are no longer distinct. No longer are women only depicted as sexually vulnerable, men are not always aggressive, and warrior women have joined forces with heroic men. The twenty-first century finds the male/female binary under scrutiny. In this series we explore the status of this discussion."
+  },
+  {
+   "type": "lecture",
+   "edition": "Fall 2019",
+   "series_type": "tuesday-distinguished",
+   "series_name": "Distinguished Lecture Series",
+   "title": "The Impact of Religion on Politics in the Middle East",
+   "speaker": "Saeed Khan",
+   "speaker_title": "Senior Lecturer, Near East & Asian Studies, Global Studies",
+   "institution": "Wayne State University",
+   "date": "2019-09-10",
+   "time": "10:00-11:30am",
+   "description": "Religion in politics is the most crucial issue facing Middle East countries. The region faces challenges for the application of modernity in terms of secularism, especially in a locale where democracy and individualism have had generally little latitude as a whole. This is due partly from its history, and where many use religion to justify their authoritarian political systems. Could technological advances have an impact and at what pace? This presentation will explore the always-changing landscape of the Middle East as a religion, politics and technology compete, clash and coexist.",
+   "speaker_bio": "Saeed A. Khan is a Senior Lecturer in the Department of Near East and Asian Studies at Wayne State University. He teaches Islamic and Middle East history, politics and culture, and is a Fellow at the Center for the Study of Citizenship. He is also Adjunct Professor in Islamic Studies at the University of Detroit-Mercy and at Rochester College, co-teaching a course on Muslim-Christian Diversity."
+  },
+  {
+   "type": "lecture",
+   "edition": "Fall 2019",
+   "series_type": "tuesday-distinguished",
+   "series_name": "Distinguished Lecture Series",
+   "title": "Escape from Nazi Germany and the Holocaust to Shanghai",
+   "speaker": "Berl Falbaum",
+   "speaker_title": "Former Political Reporter for the Detroit News",
+   "institution": null,
+   "date": "2019-10-22",
+   "time": "10:00-11:30am",
+   "description": "Hitler came to power in 1933. At that time there were approximately 500 thousand Jews in Germany and approximately 180 thousand Jews in Austria. They were loyal to their country, were part of the government, and fought for Germany in World War 1. Hitler had a plan to annihilate the world’s Jews. Jews were stripped of their citizenship, their property taken over and their means of a livelihood destroyed. Jews were given an X amount of time to find a country that would take them over, otherwise they would be thrown into concentration camps. Aside from the Dominican Republic, Shanghai was the only place that remained open to these refugees without requiring a visa. Approximately 20 thousand German, Austrian and Polish Jews were able to make the trip. Mr. Falbaum’s family was among those that made the journey. In his presentation, Mr. Falbaum will describe his family’s experiences and those of other Jews. He has compiled and edited a book Shanghai Remembered: Stories of Jews Who Escaped to Shanghai from Nazi Germany.",
+   "speaker_bio": null
+  },
+  {
+   "type": "lecture",
+   "edition": "Fall 2019",
+   "series_type": "tuesday-distinguished",
+   "series_name": "Distinguished Lecture Series",
+   "title": "Actual Innocence in Michigan: An Update from the Michigan Innocence Clinic",
+   "speaker": "David Moran",
+   "speaker_title": "Professor, Clinical Professor of Law, Michigan Innocence Clinic",
+   "institution": "University of Michigan",
+   "date": "2019-11-12",
+   "time": "10:00-11:30am",
+   "description": "Professor Moran will speak about the problem of wrongful convictions in Michigan and how the Michigan Innocence Clinic investigates and litigates cases where persons have been wrongfully convicted but there is no DNA evidence to test. Professor Moran will discuss several recent cases in which the Michigan Innocence Clinic has achieved exonerations for its clients.",
+   "speaker_bio": null
+  },
+  {
+   "type": "lecture",
+   "edition": "Fall 2019",
+   "series_type": "tuesday-distinguished",
+   "series_name": "Distinguished Lecture Series",
+   "title": "How Polio Helped FDR Win the Presidency",
+   "speaker": "Professor James Tobin",
+   "speaker_title": "Professor of Journalism",
+   "institution": "Miami University",
+   "date": "2019-12-10",
+   "time": "10:00-11:30am",
+   "description": "According to the conventional wisdom that has grown up around the public image of Franklin D. Roosevelt in the post-Watergate era, he became president only by fooling the public about the paralysis he suffered as a result of poliomyelitis. In fact, the author’s research shows that FDR made masterful use of his disability as he recovered from the disease and rose to the White House.",
+   "speaker_bio": "After earning a Ph.D. in history at the University of Michigan, James Tobin spent 20 years as a newspaper reporter and freelance writer. His books include Ernie Pyle’s War (1997), which won the National Book Critics Circle Award in biography; To Conquer the Air: The Wright Brothers and the Great Race for Flight (2003); and The Man He Became: How FDR Defied Polio to Win the Presidency (2013)."
+  },
+  {
+   "type": "lecture",
+   "edition": "Fall 2019",
+   "series_type": "tuesday-distinguished",
+   "series_name": "Distinguished Lecture Series",
+   "title": "Living Transgender: The Struggles and Rewards",
+   "speaker": "Max, Will, and Stephanie",
+   "speaker_title": null,
+   "institution": null,
+   "date": "2020-01-14",
+   "time": "10:00-11:30am",
+   "description": "Celebrate and explore the spirit of tolerance in this Martin Luther King, Jr. panel discussion with three transgender people. Our panel will share stories about their personal struggles and rewards. Meet a married transman who is the father of three young children, a transgender man who leads the UM Spectrum Center, and a woman who identifies as gender non-conforming. OLLI member Bill Roberts will act as panel moderator. Join us for this timely and meaningful discussion on gender perspectives.",
+   "speaker_bio": null,
+   "notes": "Martin Luther King, Jr. panel discussion; the three transgender panelists are identified by first name only as printed. OLLI member Bill Roberts moderates."
+  },
+  {
+   "type": "series",
+   "edition": "Fall 2019",
+   "series_type": "thursday-series",
+   "title": "South Africa: Past, Present, and a Look Forward",
+   "date_range": "2019-09-12 to 2019-10-17",
+   "time": "Thursdays, 10:00–11:30am",
+   "individual_lectures_printed": false,
+   "description": "This series will provide an overview of the history of South Africa, the transition out of apartheid, the country’s educational and political systems, the South African expression of arts/culture, and the role of South African youth in creating the path forward."
+  },
+  {
+   "type": "series",
+   "edition": "Fall 2019",
+   "series_type": "thursday-series",
+   "title": "Voting in America: Perennial Issues, Current Developments",
+   "date_range": "2019-10-31 to 2019-12-12",
+   "time": "Thursdays, 10:00–11:30am",
+   "individual_lectures_printed": false,
+   "description": "For over two hundred years the nature of voting and elections in the United States has been the focus of political conflicts. These disputes have created electoral processes which would be unrecognizable to the nation’s founders. This series will examine key elements of these processes, historically and currently: Federalism, the Electoral College, legislative redistricting/gerrymandering, requirements for eligibility to vote, methods for casting a vote, election security, and the factors determining citizen voting behavior. Recent developments on these elements across the nation, and the implementation of Michigan Proposal 2 (Voters Not Politicians) and Proposal 3 (Promote The Vote), which passed last fall, will be included in this lecture series."
+  },
+  {
+   "type": "series",
+   "edition": "Fall 2019",
+   "series_type": "thursday-series",
+   "title": "The Impact of Social Media on Society",
+   "date_range": "2020-01-09 to 2020-02-13",
+   "time": "Thursdays, 10:00–11:30am",
+   "individual_lectures_printed": false,
+   "description": "Social media—Facebook, Instagram, Twitter, and others—have become key methods for communicating via smart phones and computers. There are 2.38 billion Facebook users worldwide, and 220 million in the U.S. The average American teenager spends 3 hours or more each day on digital social media. Social media can be used positively for communicating, giving life status updates, and teaching. But social media can also have negative impacts, including spreading false information, bullying, and slandering. This lecture series examines the ways social media impact our day-to-day lives. It asks: How do social media affect young children, including their social, cognitive, and neural development? Are there impacts of social media on people’s self-esteem and mental health? How are social media used for education and to promote social welfare? How do social media compromise people’s privacy? More generally, how can we enhance the benefits of social media, while limiting their negative impacts."
+  },
+  {
+   "type": "series",
+   "edition": "Fall 2019",
+   "series_type": "thursday-series",
+   "title": "The Power of Art",
+   "date_range": "2020-02-20 to 2020-04-02",
+   "time": "Thursdays, 10:00–11:30am",
+   "individual_lectures_printed": false,
+   "description": "Art, in its many forms, can have a profound impact on individuals, communities, and society. Art can tell stories, comment on social issues, speak to people’s sense of well-being and identity, bring people together to foster understanding, define history, and illustrate science. This series explores the power of visual arts in southeastern Michigan from the perspectives of creative spirits and artists, curators, and museum leaders.",
+   "notes": "Announced as ‘Visual Arts in Southeast Michigan (2/20-4/2)’ in the catalog’s theme list; the series page prints the title ‘The Power of Art’."
+  },
+  {
+   "type": "series",
+   "edition": "Fall 2019",
+   "series_type": "thursday-series",
+   "title": "Money, Trade, and Power – What Makes the World Go ’Round",
+   "date_range": "2020-04-16 to 2020-05-21",
+   "time": "Thursdays, 10:00–11:30am",
+   "individual_lectures_printed": false,
+   "description": "Among the many issues testing relations between countries around the globe, perhaps none has strained relations more than trade in recent years. Countries strive to grow and protect their domestic industries, employment, and overall economy by preserving world markets for their most sensitive products. This lecture series will examine relations between major trading countries and regions - the U.S., the E.U, China, and Africa, among others. Each lecture will start with an overview of the area to be discussed that day. The series will explain how tariffs in world trade went from being high to where they were nearly eliminated before the recent revival of world trade tensions. The series will also address complex trade issues such as comparative advantage, supply chains, and value added. Finally, the series will review the special trade challenges facing the developing world and 2 key industries with a global and Michigan trade impact - agriculture and automotive.",
+   "notes": "Announced as ‘Trade and International Relations (4/16-5/21)’ in the catalog’s theme list."
   },
   {
    "type": "lecture",
