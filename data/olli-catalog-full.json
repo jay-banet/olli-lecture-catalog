@@ -7,10 +7,11 @@
   "WS 2021 UM OSHER Catalog.pdf (80 pages; standalone Winter/Spring 2021 catalog, online-only COVID term)",
   "Scrollable Copy OLLI_Catalog_2022_Fall_v3.pdf (33 pages; final Fall 2022 catalog — supersedes OLLI_Catalog_2022_Fall_v1b-JG-PROOF-FIN.pdf, the 31-page press proof the edition was first parsed from)",
   "olli-fall-2026final.pdf (93 pages; standalone Fall 2026 catalog)",
-  "Pages Fall 2019 lectures.pdf (5 pages; Fall 2019 lecture-pages excerpt, rasterized Microsoft Print-to-PDF transcribed in-session)"
+  "Pages Fall 2019 lectures.pdf (5 pages; Fall 2019 lecture-pages excerpt, rasterized Microsoft Print-to-PDF transcribed in-session)",
+  "OLLI_2023_Fall_Catalog-web-comp-2.pdf (68 pages; complete standalone Fall 2023 catalog, Bernie-sent 2026-08-05 — supplies the DEI/Zekelman and September Gourdji pages missing from the six-edition combined PDF)"
  ],
- "generated": "2026-07-31",
- "method": "deterministic splitter (parser.py, pdftotext default reading-order mode) + in-session LLM tagging (BLC-001; Winter 2026 edition + speaker_bio field added in BLC-002; Fall 2018 / Fall 2020 / Winter/Spring 2021 / Fall 2022 archive catalogs added in BLC-003); Fall 2026 standalone catalog added 2026-07-29; Fall 2022 re-parsed from the final v3 catalog, replacing the press-proof parse (BLC-006); Fall 2019 5-page lecture-pages excerpt added via in-session visual transcription (no text layer, no OCR dependency — BLC-010)",
+ "generated": "2026-08-06",
+ "method": "deterministic splitter (parser.py, pdftotext default reading-order mode) + in-session LLM tagging (BLC-001; Winter 2026 edition + speaker_bio field added in BLC-002; Fall 2018 / Fall 2020 / Winter/Spring 2021 / Fall 2022 archive catalogs added in BLC-003); Fall 2026 standalone catalog added 2026-07-29; Fall 2022 re-parsed from the final v3 catalog, replacing the press-proof parse (BLC-006); Fall 2019 5-page lecture-pages excerpt added via in-session visual transcription (no text layer, no OCR dependency — BLC-010); 5 missing Fall 2023 records (4 Zekelman Holocaust Center lectures + the September Gourdji lecture) recovered from the complete standalone Fall 2023 catalog (BLC-008)",
  "editions": [
   "Fall 2018",
   "Fall 2019",
@@ -27,9 +28,9 @@
   "Fall 2026"
  ],
  "summary": {
-  "total_records": 203,
-  "lectures": 150,
-  "series": 53,
+  "total_records": 209,
+  "lectures": 155,
+  "series": 54,
   "lectures_by_edition": {
    "Fall 2018": 5,
    "Fall 2019": 5,
@@ -37,7 +38,7 @@
    "Winter/Spring 2021": 13,
    "Fall 2022": 5,
    "Winter/Spring 2023": 6,
-   "Fall 2023": 4,
+   "Fall 2023": 9,
    "Winter 2024": 22,
    "Fall 2024": 12,
    "Winter/Spring 2025": 12,
@@ -52,7 +53,7 @@
    "Winter/Spring 2021": 7,
    "Fall 2022": 2,
    "Winter/Spring 2023": 4,
-   "Fall 2023": 2,
+   "Fall 2023": 3,
    "Winter 2024": 6,
    "Fall 2024": 3,
    "Winter/Spring 2025": 3,
@@ -61,9 +62,9 @@
    "Fall 2026": 3
   },
   "lectures_by_series_type": {
-   "tuesday-distinguished": 61,
+   "tuesday-distinguished": 62,
    "thursday-series": 46,
-   "special": 43
+   "special": 47
   },
   "speaker_bio_by_edition": {
    "Fall 2018": {
@@ -91,8 +92,8 @@
     "lectures": 6
    },
    "Fall 2023": {
-    "with_bio": 4,
-    "lectures": 4
+    "with_bio": 5,
+    "lectures": 9
    },
    "Winter 2024": {
     "with_bio": 16,
@@ -121,8 +122,6 @@
   }
  },
  "gaps": [
-  "Fall 2023: 'Banning Books and Ideas: An Old Problem Brings Fresh Evils' (September 2023 Gourdji lecture, catalog p.16) is listed in the TOC but its page is not included in the PDF — no record could be extracted.",
-  "Fall 2023: the four Zekelman Holocaust Center lectures of the Fall 2023 term (How Could This Happen?; The Holocaust and the Final Solution; Resistance during the Holocaust; Propaganda and the Holocaust — catalog pp.14-15) are listed in the TOC but their pages are not included in the PDF.",
   "Fall 2024: the 'Limitations on the Exercise of Free Expression' Thursday series (Oct-Nov 2024) is announced series-level only; its individual lectures are not printed anywhere in the PDF.",
   "Winter/Spring 2025: the 'Celebrating the Beauty and Power of the Arts' Thursday series (Mar 13 - Apr 3, 2025) is announced series-level only ('More details to come'); individual lectures are not printed anywhere in the PDF.",
   "Fall 2018: Distinguished lectures print no descriptions — only date, title, and speaker credentials; only the Sep 2018-Jan 2019 half of the ten-lecture season is printed, and no Summer series page exists in this catalog.",
@@ -143,7 +142,8 @@
   "Fall 2022 prints an “Upcoming Thursday Morning Lecture Series for Winter/Spring 2023” preview box (Plastics; Future of Education; Human Migration; Summer 2023). Not recorded — those series records live in the Winter/Spring 2023 edition.",
   "Fall 2022 and Winter/Spring 2023 both print “What Should the Work Ethic Mean for Us Today?” (2023-01-10, Anderson) and “Finding Catholics In Early America” (2022-10-11 vs 2023-02-14, Juster). Kept in both editions as printed.",
   "Fall 2026 printed previews of two Winter/Spring 2027 Thursday series (The Impact of AI on Society, Jan 28 - Feb 25, 2027; the new non-thematic Spring Lecture Series, Mar 11 - Apr 8, 2027, with partial speaker announcements: Robin Brewer on 3/11 and Aaron Ahuvia on 4/1). Not recorded here - per the preview convention they belong to the Winter/Spring 2027 edition when that catalog arrives.",
-  "Fall 2019 (an annual catalog like Fall 2018) fully describes all five 2019-20 Thursday themes, including the three winter/spring-2020 ones (The Impact of Social Media on Society; The Power of Art; Money, Trade, and Power); all five live as Fall 2019 series records. If the Winter/Spring 2020 catalog surfaces and reprints them, both editions keep their records, per the cross-edition convention."
+  "Fall 2019 (an annual catalog like Fall 2018) fully describes all five 2019-20 Thursday themes, including the three winter/spring-2020 ones (The Impact of Social Media on Society; The Power of Art; Money, Trade, and Power); all five live as Fall 2019 series records. If the Winter/Spring 2020 catalog surfaces and reprints them, both editions keep their records, per the cross-edition convention.",
+  "Fall 2023 and Winter 2024 both print the Zekelman Holocaust Center's Special Lecture Series intro (September 2023 to June 2024); each edition keeps its own series record with the sessions of its own term (Sep-Dec 2023 in Fall 2023; Jan-Jun 2024 in Winter 2024) — no lecture duplication."
  ],
  "records": [
   {
@@ -1173,6 +1173,92 @@
    "notes": "Summer Lecture Series (3 lectures); announced TBA only — never fully described in any edition of this PDF."
   },
   {
+   "type": "series",
+   "edition": "Fall 2023",
+   "series_type": "special",
+   "title": "Zekelman Holocaust Center's Special Lecture Series",
+   "date_range": "September 2023 to June 2024",
+   "time": "2nd Thursday of the month, 2:00 - 3:30pm",
+   "individual_lectures_printed": true,
+   "description": "This series will be offered through The Zekelman Holocaust Center located in Farmington Hills, MI and facilitated by their professional Education Department staff. The mission of The Zekelman Holocaust Center has remained the same for nearly 40 years: engage, educate, and empower people of all backgrounds through teaching about the murder of millions during the Holocaust and why each of us must respect and stand up for the rights of others if we are to prevent future genocide and hate crimes. Participants can expect to learn about the Holocaust through thematic and chronological sessions that highlight the importance of individual choice, during the past and present, and the experiences of the Jewish people during the Holocaust.",
+   "notes": "OLLI DEI presents. Day pass $12; full yearlong series $60; sessions online only. The four Sep-Dec 2023 sessions are printed in this edition; the series continues January through June 2024 — those six sessions are printed in the Winter 2024 edition, which carries its own series record per the cross-edition convention."
+  },
+  {
+   "type": "lecture",
+   "edition": "Fall 2023",
+   "series_type": "special",
+   "series_name": "Zekelman Holocaust Center's Special Lecture Series",
+   "title": "How Could This Happen?: Learning about the Holocaust",
+   "speaker": null,
+   "speaker_title": null,
+   "institution": "Zekelman Holocaust Center",
+   "date": "2023-09-14",
+   "time": "2:00 - 3:30pm",
+   "description": "The Holocaust was one of the darkest times in human history, and many wonder how this could have happened? The Holocaust was the culmination of years of hatred that spread and manifested itself into actions. Eventually, these actions became very violent on a large scale and were government-sponsored and organized. In this presentation, we will use artifacts and victim/survivor perspectives to discuss the escalation of hate from biased attitudes to bias-motivated violence during the Holocaust.",
+   "speaker_bio": null,
+   "notes": "Online only ($12 day pass); facilitated by Zekelman Holocaust Center Education Department staff (individual presenter not named)."
+  },
+  {
+   "type": "lecture",
+   "edition": "Fall 2023",
+   "series_type": "special",
+   "series_name": "Zekelman Holocaust Center's Special Lecture Series",
+   "title": "The Holocaust and the Final Solution",
+   "speaker": null,
+   "speaker_title": null,
+   "institution": "Zekelman Holocaust Center",
+   "date": "2023-10-12",
+   "time": "2:00 - 3:30pm",
+   "description": "The Nazi regime murdered over six million Jews in the Holocaust, yet this event was not inevitable and did not have to happen. This disaster resulted from choices made by individual people who chose to be bystanders, upstanders, collaborators, and perpetrators. In this presentation, we will address the human story through explaining various types of camps that the Nazis sent the Jews to, why they were sent there, as well as testimony and artifacts from those who survived the camps.",
+   "speaker_bio": null,
+   "notes": "Online only ($12 day pass); facilitated by Zekelman Holocaust Center Education Department staff (individual presenter not named)."
+  },
+  {
+   "type": "lecture",
+   "edition": "Fall 2023",
+   "series_type": "special",
+   "series_name": "Zekelman Holocaust Center's Special Lecture Series",
+   "title": "Resistance during the Holocaust",
+   "speaker": null,
+   "speaker_title": null,
+   "institution": "Zekelman Holocaust Center",
+   "date": "2023-11-09",
+   "time": "2:00 - 3:30pm",
+   "description": "While many people chose to perpetuate hate during the Holocaust, some people resisted the Nazi regime and its destructive ideology. Cultural/ spiritual resistance and physical/ armed resistance were both important types of opposition used to undermine Nazi power. Resistance of both kinds inspired hope among the persecuted Jews. This program will discuss these different types of resistance, through the use of artifacts, testimonies, and survivor art.",
+   "speaker_bio": null,
+   "notes": "Online only ($12 day pass); facilitated by Zekelman Holocaust Center Education Department staff (individual presenter not named)."
+  },
+  {
+   "type": "lecture",
+   "edition": "Fall 2023",
+   "series_type": "special",
+   "series_name": "Zekelman Holocaust Center's Special Lecture Series",
+   "title": "Propaganda and the Holocaust",
+   "speaker": null,
+   "speaker_title": null,
+   "institution": "Zekelman Holocaust Center",
+   "date": "2023-12-14",
+   "time": "2:00 - 3:30pm",
+   "description": "Many people chose to support the Nazi regime during the Holocaust, and propaganda played a significant role in their decision-making. Propaganda is false, or partly false, information intended to shape people’s opinions and actions that fulfill the propagandist’s intent. During the Holocaust, this intent meant the attempted annihilation of the Jews. This presentation will address the dangerous consequences of propaganda and antisemitism in the Holocaust by utilizing artifacts and survivor testimony.",
+   "speaker_bio": null,
+   "notes": "Online only ($12 day pass); facilitated by Zekelman Holocaust Center Education Department staff (individual presenter not named)."
+  },
+  {
+   "type": "lecture",
+   "edition": "Fall 2023",
+   "series_type": "tuesday-distinguished",
+   "series_name": "Alfred Gourdji Distinguished Lecture Series",
+   "title": "Banning Books and Ideas: An Old Problem Brings Fresh Evils",
+   "speaker": "Professor Leonard Niehoff",
+   "speaker_title": "Professor from Practice at the University of Michigan Law School",
+   "institution": "University of Michigan",
+   "date": "2023-09-12",
+   "time": "10:00 - 11:30 am",
+   "description": "Professor Niehoff will discuss current trends in book banning and censorship and will explain why these efforts are even more worrisome than those we have seen in the past.",
+   "speaker_bio": "Len Niehoff is a professor at the University of Michigan Law School and a practicing First Amendment and appellate litigator with the Honigman firm. He teaches courses in Civil Procedure, Ethics, Evidence, First Amendment, Media Law, Law & Theology, and Shakespeare & the Law. He is the author of more than 100 publications, including the book Free Speech: From Core Values to Current Debates (2022). He has represented media and other clients in dozens of First Amendment cases.",
+   "notes": "Sponsored by the Martin Family Foundation."
+  },
+  {
    "type": "lecture",
    "edition": "Fall 2023",
    "series_type": "tuesday-distinguished",
@@ -1260,7 +1346,7 @@
    "time": "2nd Thursday of the month, 2:00 - 3:30pm",
    "individual_lectures_printed": true,
    "description": "This series will be offered through The Zekelman Holocaust Center located in Farmington Hills, MI and facilitated by their professional Education Department staff. The mission of The Zekelman Holocaust Center has remained the same for nearly 40 years: engage, educate, and empower people of all backgrounds through teaching about the murder of millions during the Holocaust and why each of us must respect and stand up for the rights of others if we are to prevent future genocide and hate crimes. Participants can expect to learn about the Holocaust through thematic and chronological sessions that highlight the importance of individual choice, during the past and present, and the experiences of the Jewish people during the Holocaust.",
-   "notes": "OLLI DEI presents. Day pass $12; full yearlong series $60; sessions online only. The six Jan-Jun 2024 sessions are printed in this edition; the four Fall 2023 sessions are TOC-listed only (pages missing from PDF)."
+   "notes": "OLLI DEI presents. Day pass $12; full yearlong series $60; sessions online only. The six Jan-Jun 2024 sessions are printed in this edition; the four Fall 2023 sessions are printed in the Fall 2023 edition (recovered from the complete standalone Fall 2023 catalog, BLC-008)."
   },
   {
    "type": "lecture",
