@@ -105,7 +105,7 @@ def build(json_path, out_path):
     gaps = "".join(f"<li>{esc(g)}</li>" for g in data.get("gaps", []))
 
     n_editions = len(editions)
-    page = f'''<title>OLLI Lectures 2018–2026 · Unofficial Catalog</title>
+    page = f'''<title>OLLI Lectures 2017–2026 · Unofficial Catalog</title>
 <style>
 :root {{
   --paper: #FAF9F5; --card: #FFFFFF; --ink: #22271F; --ink-soft: #565E52;
@@ -200,7 +200,7 @@ footer {{ margin-top: 2rem; font-family: var(--sans); font-size: .8rem; color: v
 <div class="wrap">
 <header>
   <p class="eyebrow">Unofficial index · compiled from the published catalog brochures</p>
-  <h1>OLLI Lectures, 2018–2026</h1>
+  <h1>OLLI Lectures, 2017–2026</h1>
   <p class="lede">Every lecture from {n_editions} seasons of the Osher Lifelong Learning Institute at the
   University of Michigan — the Distinguished Lecture Series, the Thursday Lecture Series,
   and special series — searchable by speaker, topic, or season.</p>
@@ -232,9 +232,10 @@ footer {{ margin-top: 2rem; font-family: var(--sans); font-size: .8rem; color: v
 <section class="about">
   <h3>About this catalog</h3>
   <p>Compiled from the printed OLLI-UM catalog brochures (Fall 2018 through Winter 2026;
-  not every season's brochure has surfaced yet). Before Winter 2024, Thursday lectures were
-  announced only as series themes — individual Thursday speakers for those seasons were never
-  printed. Some entries note misprints found in the source brochures. Known gaps:</p>
+  not every season's brochure has surfaced yet), supplemented with OLLI's lecture-announcement
+  emails (2017–2026), which fill in individual talks for seasons whose brochures listed only
+  series themes — and for seasons with no surviving brochure at all. Email-sourced entries say
+  so in their notes. Some entries note misprints found in the sources. Known gaps:</p>
   <ul>{gaps}</ul>
 </section>
 

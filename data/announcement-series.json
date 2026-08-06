@@ -1,0 +1,25 @@
+{
+ "_readme": "BLC-012 curated series names seen only in OLLI announcement emails (seasons with no catalog edition, or headings that abbreviate the printed series title). Used by announcements.py/merge_announcements.py to split 'Series: Title' headings; combined with the series names already in olli-catalog-full.json. Curated in-session per the project's hybrid deterministic/LLM design.",
+ "series": [
+  "Our Changing Economics Landscape",
+  "Global Waters: The Tip of the Iceberg",
+  "Global Waters",
+  "Music In Detroit and Michigan: The Legend Continues",
+  "Native Americans of the Great Lakes Region",
+  "Nature and Recreation in Michigan",
+  "Will Democracy Survive?",
+  "International Organizations and Agreements",
+  "Artificial Intelligence (AI)",
+  "Biomedical Research and Technology",
+  "Innovative Research and Treatments Impacting Mental Health in the U.S.",
+  "Challenges facing the U.S. Health Care System",
+  "Plastics and the Carbon Age",
+  "The Arts as Catalysts of Social Change",
+  "PitchLine: Assisted Living",
+  "Big Science and Tech Explained",
+  "Breathing Life Into Old Buildings",
+  "Turmoil in Eastern Europe: Ukraine and Beyond",
+  "Human Migration through the Ages",
+  "Trends in Public Education"
+ ]
+}

@@ -1,0 +1,416 @@
+{
+ "_readme": "BLC-012 curation overlay — the in-session LLM half of the hybrid design (wiki tech/hybrid-deterministic-split-inline-llm-tagging.md). Each entry matches ONE parsed announcement lecture by (source, lecture_date, title_prefix as parsed) and either drops it (cross-send noise the deterministic dedup could not collapse) or overrides fields the layout drift mangled (titles taken from venue lines, speakers named only in prose, series names abbreviated in headings). Values were read from the original email bodies in data/olli-*-announcements.txt, never guessed. merge_announcements.py applies this overlay and warns about entries that no longer match.",
+ "entries": [
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2021-11-04",
+    "title_prefix": "Whither Capitalism"
+   },
+   "set": {
+    "speaker": "Jim Adams"
+   },
+   "add_note": "speaker identified from the description text"
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2021-11-11",
+    "title_prefix": "The Economic Impact of Harnessing"
+   },
+   "add_note": "speaker not named in the announcement email"
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2021-11-18",
+    "title_prefix": "Tax Policy and Wealth Inequality"
+   },
+   "add_note": "speaker not named in the announcement email"
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2022-02-17",
+    "title_prefix": "💧"
+   },
+   "set": {
+    "title": "Making the Provision of Water Services Efficient and Equitable",
+    "series_hint": "Global Waters: The Tip of the Iceberg"
+   },
+   "add_note": "title recovered from the announcement subject (the email heading rendered as emoji)"
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2022-06-09",
+    "title_prefix": "Michigan’s State Parks"
+   },
+   "set": {
+    "speaker": "Craig Kasmer, Hillary Pine and Theresa Neal",
+    "speaker_title": null
+   }
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2022-09-22",
+    "title_prefix": "10:00 - 11:30 AM Washtenaw"
+   },
+   "set": {
+    "title": "Understanding Eastern Europe",
+    "speaker": "Kevin Deegan-Krause",
+    "series_hint": "Turmoil in Eastern Europe: Ukraine and Beyond"
+   }
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2022-10-06",
+    "title_prefix": "A Better Future for Us All"
+   },
+   "set": {
+    "speaker": "Dr. Taras K. Oleksyk",
+    "series_hint": "Turmoil in Eastern Europe: Ukraine and Beyond"
+   }
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2022-10-06",
+    "title_prefix": "From Community Activist to the Federal Bench"
+   },
+   "add_note": "announced to the Thursday lecture list; the same talk ran as the Tuesday Distinguished lecture of Oct 11, 2022"
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2022-10-13",
+    "title_prefix": "Considerations for a Post-Conflict"
+   },
+   "set": {
+    "series_hint": "Turmoil in Eastern Europe: Ukraine and Beyond"
+   },
+   "add_note": "speaker not named in the announcement email (a former USAID Ukraine program officer)"
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2022-10-20",
+    "title_prefix": "The culture of Ukraine has evolved"
+   },
+   "drop": true
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2022-10-20",
+    "title_prefix": "Ukraine and its Culture"
+   },
+   "set": {
+    "series_hint": "Turmoil in Eastern Europe: Ukraine and Beyond"
+   },
+   "add_note": "speaker not named in the announcement email"
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2022-12-08",
+    "title_prefix": "America Between Illiberal Democracy"
+   },
+   "set": {
+    "speaker": "Dan Slater",
+    "series_hint": "Will Democracy Survive?"
+   }
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2023-01-12",
+    "title_prefix": ""
+   },
+   "set": {
+    "title": "Plastics and Microplastics: Human and Environmental Risk Overview",
+    "series_hint": "Plastics and the Carbon Age: Environmental and Health Impacts"
+   }
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2023-01-19",
+    "title_prefix": "The Story of Plastic Pollution"
+   },
+   "set": {
+    "speaker": "Professor Rochman",
+    "series_hint": "Plastics and the Carbon Age: Environmental and Health Impacts"
+   },
+   "add_note": "announcement names the speaker only as Professor Rochman"
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2023-01-26",
+    "title_prefix": "Plastics and the Carbon Age"
+   },
+   "drop": true
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2023-02-02",
+    "title_prefix": "Five Misperceptions"
+   },
+   "set": {
+    "speaker": "Shelie Miller",
+    "speaker_title": "PhD",
+    "series_hint": "Plastics and the Carbon Age: Environmental and Health Impacts"
+   }
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2023-02-09",
+    "title_prefix": "Microbial Recycling"
+   },
+   "set": {
+    "speaker": "Laurel Harmon",
+    "speaker_title": "PhD",
+    "series_hint": "Plastics and the Carbon Age: Environmental and Health Impacts"
+   }
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2023-02-16",
+    "title_prefix": "What Role Can Recycling"
+   },
+   "set": {
+    "speaker": "Alex Danovitch",
+    "series_hint": "Plastics and the Carbon Age: Environmental and Health Impacts"
+   }
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2023-02-21",
+    "title_prefix": "Plastics and the Carbon Age"
+   },
+   "set": {
+    "title": "Screening of Impacts of Chemicals in Plastics: From Toys to Food",
+    "series_hint": "Plastics and the Carbon Age: Environmental and Health Impacts"
+   },
+   "add_note": "rescheduled from 1/26/2023"
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2023-05-18",
+    "title_prefix": "Streets of Gold"
+   },
+   "set": {
+    "title": "“Streets of Gold”: The Story of Immigrants to the US Based on Actual Data"
+   }
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2019-11-21",
+    "title_prefix": "Making Voting More Convenient"
+   },
+   "set": {
+    "title": "Making Voting More Convenient: Implementing Michigan’s Proposal 3 (Promote the Vote)",
+    "speaker": "Panel: Riley Beggin (moderator), Dr. Susan Smith, Lawrence Kestenbaum"
+   }
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2024-03-14",
+    "title_prefix": "A Discussion with the Founders"
+   },
+   "set": {
+    "speaker": "Leah Hill, Courtney Burkett, Sarah Clare Corporandy and Sarah Winkler",
+    "speaker_title": null
+   }
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2025-06-02",
+    "title_prefix": "Museum Education in the 21st Century"
+   },
+   "drop": true
+  },
+  {
+   "match": {
+    "source": "olli-agdls-announcements.txt",
+    "lecture_date": "2024-02-13",
+    "title_prefix": "The Contested Terrain of Critical Race Theory"
+   },
+   "set": {
+    "title": "The Contested Terrain of Critical Race Theory"
+   },
+   "add_note": "planned jointly with OLLI-UM’s DEI Committee"
+  },
+  {
+   "match": {
+    "source": "olli-agdls-announcements.txt",
+    "lecture_date": "2024-03-11",
+    "title_prefix": "Special Film Event"
+   },
+   "add_note": "film screening and discussion — a lecture speaker is not named (an evening with Prof. Robert D. Putnam)"
+  },
+  {
+   "match": {
+    "source": "olli-agdls-announcements.txt",
+    "lecture_date": "2025-12-09",
+    "title_prefix": "Miles to Go Before We Sleep"
+   },
+   "set": {
+    "title": "“Miles to Go Before We Sleep”: Cutting Edge Treatments and Technologies in Sleep Health"
+   }
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2022-05-05",
+    "title_prefix": "Omission as the Modern Form"
+   },
+   "drop": true
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2023-02-23",
+    "title_prefix": "Laura Anderson and Katie Silberstein"
+   },
+   "set": {
+    "title": "Leveraging Dollars to Do the Most For Students",
+    "speaker": "Laura Anderson and Katie Silberstein",
+    "series_hint": "Trends in Public Education"
+   }
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2023-09-14",
+    "title_prefix": "How Could This Happen"
+   },
+   "set": {
+    "speaker": "Harry Smith",
+    "speaker_title": "Adult Education Specialist"
+   }
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2023-09-28",
+    "title_prefix": "Chinese Economy"
+   },
+   "set": {
+    "title": "Chinese Economy: Where is it Headed?"
+   },
+   "add_note": "not recorded per the presenter's request"
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2024-06-20",
+    "title_prefix": "Antisemitism TodayEnduring"
+   },
+   "set": {
+    "title": "Antisemitism Today: Enduring Hate After the Holocaust"
+   }
+  },
+  {
+   "match": {
+    "source": "olli-agdls-announcements.txt",
+    "lecture_date": "2022-10-11",
+    "title_prefix": "From Community Activist"
+   },
+   "add_note": "announced as a speaker change — replaced the lecture printed in the Fall 2022 catalog for Oct 11 (Susan Juster, Finding Catholics In Early America)"
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2023-06-01",
+    "title_prefix": "Breathing Life Into Old Buildings"
+   },
+   "set": {
+    "speaker_title": "FAIA, Quinn Evans Principal Emeritus",
+    "series_hint": "Summer Lecture Series: Breathing Life Into Old Buildings",
+    "title": "Detroit: From Ruins to Riches"
+   }
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2023-06-08",
+    "title_prefix": "Why Do I Like This Place"
+   },
+   "set": {
+    "series_hint": "Summer Lecture Series: Breathing Life Into Old Buildings"
+   }
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2023-06-15",
+    "title_prefix": "ZERO is a Positive Number"
+   },
+   "set": {
+    "series_hint": "Summer Lecture Series: Breathing Life Into Old Buildings"
+   }
+  },
+  {
+   "match": {
+    "source": "olli-thursday-announcements.txt",
+    "lecture_date": "2022-12-01",
+    "title_prefix": "Nicholas Stephanopoulos is the"
+   },
+   "drop": true
+  }
+ ],
+ "additions": [
+  {
+   "source": "olli-thursday-announcements.txt",
+   "era": "template",
+   "title": "The 150-Year-Old Human: How Soon? How Desirable?",
+   "speaker": null,
+   "speaker_title": null,
+   "series_hint": "Science Pop-Up Talks",
+   "lecture_date": "2022-10-27",
+   "time": "1:00 - 2:30 pm",
+   "description": null,
+   "bio": null,
+   "n_sends": 1,
+   "notes": [
+    "speaker not named in the announcement email (a Zoom-only Science Pop-Up registration reminder with no description)"
+   ],
+   "needs_review": [],
+   "cancelled": false,
+   "subject": "OLLI-UM: Science Pop-Up Talks: The 150 Year Old Human: How Soon? How Desirable?",
+   "date_sent": "2022-10-21"
+  },
+  {
+   "source": "olli-thursday-announcements.txt",
+   "era": "template",
+   "title": "The Rise of Antimicrobial Resistance and What Can Be Done About It",
+   "speaker": "Dawn M. Sievert",
+   "speaker_title": "PhD, Centers for Disease Control (CDC)",
+   "series_hint": "Science Pop-Up Talks",
+   "lecture_date": "2022-11-17",
+   "time": "1:00 - 2:30 pm",
+   "description": null,
+   "bio": null,
+   "n_sends": 1,
+   "notes": [
+    "Science Pop-Up Talk (Zoom only), separate from that day's Thursday Morning lecture; the announcement is a registration reminder with no description"
+   ],
+   "needs_review": [],
+   "cancelled": false,
+   "subject": "OLLI-UM: Science Pop Up Talks: The Rise of Antimicrobial Resistance and What Can Be Done About It",
+   "date_sent": "2022-11-17"
+  }
+ ]
+}
